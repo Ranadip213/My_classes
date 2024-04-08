@@ -24,7 +24,7 @@ export default function Page() {
     async function fetchTeachers() {
       setLoading(true);
       const apiEndpoint =
-        'https://my-classes-backend.onrender.com/api/v1/student/showTeachers';
+        'https://backendd.myclassestripura.com/api/v1/student/showTeachers';
 
       try {
         const response = await axios.get(apiEndpoint);
@@ -45,8 +45,8 @@ export default function Page() {
 
   return (
     <main className="flex flex-col rounded-xl bg-gray-200 p-3">
-      <div>
-        {/* <form onSubmit={handleSearch} className='flex'> */}
+      {/* <div>
+         <form onSubmit={handleSearch} className='flex'> 
         <form className="flex" action="fetchTeachers()">
           <input
             type="text"
@@ -62,7 +62,7 @@ export default function Page() {
             Search
           </button>
         </form>
-      </div>
+      </div> */}
 
       <h1 className="m-4 text-center text-4xl font-bold">Our Teachers</h1>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
